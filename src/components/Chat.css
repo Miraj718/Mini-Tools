@@ -1,0 +1,161 @@
+.chats-container{
+    /* position: absolute; */
+    background-color: #333;
+    padding: 200px;
+    /* bottom: 180px; */
+    /* bottom: 150px; */
+}
+
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-header{
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-message{
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: transparent;
+    color: white;
+}
+
+.chat-message{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+
+.chat-message.client .content{
+    background-color: #E1306C;
+    color: white;
+    margin-left: auto;
+}
+
+.chat-message.agent .content{
+    background-color: #f56040;
+    color: white;
+}
+
+.chat-message .content{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.chat-input{
+    display: flex;
+    padding: 10px;
+    background-color: transparent;
+}
+
+ /* Input field  */
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom-left-radius: 20px; /* Rounded bottom-left corner  */
+    border-top-left-radius: 20px;  /* Rounded top-left corner  */
+    color: white;  /* White text  */
+    background-color: rgba(255, 255, 255, 0.3); /*  White with transparency for input field */
+}
+
+ /* Send button  */
+.chat-input button {
+    background-color: #833AB4; /* Instagram purple color  */
+    color: white;  /* White text  */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded corners  */
+    cursor: pointer;
+}
+
+ /* Send button hover effect  */
+.chat-input button:hover {
+    background-color: #6F3B94; /* Darker Instagram purple color on hover  */
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.feedback-container h2 {
+    margin-bottom: 20px;
+}
+
+.feedback-form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.feedback-form h2 {
+    margin-bottom: 20px;
+}
+
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.feedback-form input[type="number"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+  /* Rating stars  */
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.star {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star.filled {
+    color: gold;
+}
+
+ /* Submit button  */
+.feedback-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.feedback-form button:hover {
+    background-color: #0056b3;
+}
+
+ /* Modal styles  */
+.modal-body {
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+/* Container for the form */
+.form-container {
+  background-color: #333; /* Dark background color */
+  padding: 139px;
+  }
+  
+  /* Form group styling */
+  /* .form-group {
+    margin-bottom: 15px;
+  } */
+  
+  /* Label styling */
+  .form-group label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Input styling */
+  .form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+  .form-group button {
+    background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* Add margin to separate button from other elements */
+  align-self: flex-end;
+  }
+  
+  /* Button hover effect */
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+  
